@@ -1,4 +1,3 @@
-
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -156,7 +155,7 @@ const Index = () => {
               <h2 className="text-lg font-semibold mb-4">生成的文案</h2>
               
               {/* Streaming content display */}
-              {streamingContent && !streamingCompleted && (
+              {streamingContent && !copyResults.length && (
                 <Card className="mb-6 overflow-hidden bg-muted/20">
                   <CardContent className="p-4">
                     <TypewriterText 
