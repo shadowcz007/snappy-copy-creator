@@ -9,7 +9,7 @@ import { ApiSettingsDialog } from "@/components/ApiSettingsDialog";
 import { generateCopyText, parseCopyResults } from "@/services/apiService";
 import { useApiStore } from "@/store/apiStore";
 import { toast } from "sonner";
-import { MagicWandIcon } from "lucide-react";
+import { Wand2 } from "lucide-react";
 import { TypewriterText } from "@/components/TypewriterText";
 
 interface CopyItem {
@@ -142,7 +142,7 @@ const Index = () => {
                     </>
                   ) : (
                     <>
-                      <MagicWandIcon className="w-4 h-4 mr-2" />
+                      <Wand2 className="w-4 h-4 mr-2" />
                       生成文案
                     </>
                   )}
